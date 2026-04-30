@@ -55,6 +55,24 @@ class _NumberTracingScreenState extends ConsumerState<LetterTracingScreen> {
 
     return Scaffold(
       backgroundColor: Color(0xFFF3BE7A),
+      appBar: AppBar(
+        backgroundColor: Color(0xFFF3BE7A),
+        leading: GestureDetector(
+          onTap: () => Navigator.pop(context),
+          child: Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              SizedBox(width: 10,),
+              Icon(Icons.arrow_back_ios, color: Colors.black, fontWeight: FontWeight.bold,),
+              Text(
+                'Back',
+                style: TextStyle(fontFamily: 'ABeeZee', fontSize: 28, fontWeight: FontWeight.bold),
+              ),
+            ],
+          ),
+        ),
+        leadingWidth: 100,
+      ),
       body: Stack(
         alignment: Alignment.center,
         children: [
