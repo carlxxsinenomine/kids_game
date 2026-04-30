@@ -1,0 +1,36 @@
+name: kids_game
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  flutter_svg: ^2.2.4
+  tracing_game: ^0.0.4+1
+  riverpod: ^3.2.1
+  flutter_riverpod: ^3.3.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/numbers/
+    - assets/letters/
+
+  fonts:
+    - family: ABeeZee
+      fonts:
+        - asset: assets/fonts/ABeeZee-Regular.ttf
+        - asset: assets/fonts/ABeeZee-Italic.ttf
+          style: italic
