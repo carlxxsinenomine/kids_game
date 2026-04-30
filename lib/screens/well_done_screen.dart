@@ -110,7 +110,7 @@ class WellDoneScreen extends StatelessWidget {
                       ),
                     ),
                     const SizedBox(height: 12),
-
+                    // These are the stars; Pede kong i Wrap() pero nah
                     // Row(
                     //   mainAxisAlignment: MainAxisAlignment.center,
                     //   children: List.generate(totalRounds, (i) {
